@@ -12,6 +12,8 @@
         <form action="/submit" method="post">
 
             <!-- Элемент <label> связывает текстовую метку с элементом формы, улучшая доступность -->
+        <fieldset>
+                <legend>Основная информация</legend>
             <label for="name">Имя:</label>
             <!-- Элемент <input> используется для ввода данных пользователем. Он имеет различные типы, которые определяют его поведение и внешний вид -->
             <input type="text" id="name" name="name" required>
@@ -21,11 +23,17 @@
 
             <label for="password">Пароль:</label>
             <input type="password" id="password" name="password" required>
+        </fieldset>
 
-            <label for="comments">Комментарии:</label>
+        <fieldset>
+                <legend>Комментарий:</legend>
+            <label for="comments"></label>
             <!-- Элемент <textarea> используется для многострочного ввода текста -->
             <textarea id="comments" name="comments" rows="4" cols="40" required></textarea>
+        </fieldset>
 
+        <fieldset>
+            <legend>Дополнительная информация</legend>   
             <label for="country">Country:</label>
             <!-- Элемент <select> используется для создания выпадающего списка, который позволяет пользователю выбирать один или несколько вариантов -->
             <select name="country" id="country" required>
@@ -36,10 +44,14 @@
                 <option value="ca">Канада</option>
                 <option value="us">США</option>
             </select>
+        </fieldset>
 
+        <fieldset>
+            <legend>Действия</legend>
             <!-- Элемент <button> используется для создания кнопок, которые можно настроить для различных действий, таких как отправка формы или выполнение скриптов -->
             <button type="submit">Submit</button>
             <button type="reset">Reset</button>
+        </fieldset>
         </form>
 
     </body>
