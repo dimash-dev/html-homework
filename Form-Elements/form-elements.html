@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Elements</title>
+    </head>
+
+    <body>
+        <h1>Форма регистрации</h1>
+
+        <!-- Начало формы -->
+         <form action="/submit" method="post">
+
+            <!-- Группировка полей ввода -->
+             <fieldset>
+                <legend>Личная информация</legend>
+
+                <!-- Поле ввода для имени -->
+                 <label for="name">Имя:</label><br>
+                 <input type="text" id="name" name="name" required><br><br>
+
+                <!-- Поле ввода электронной почты -->
+                 <label for="email">Электронная почта:</label><br>
+                 <input type="email" id="email" name="email" required><br><br>
+
+                 <!-- Поле ввода пароля -->    
+                 <label for="password">Пароль:</label><br>
+                 <input type="password" id="password" name="password" required><br><br>
+
+                 <!-- Текстовое поле для комментариев -->
+                 <label for="comments">Комментарии:</label><br>
+                 <textarea id="comments" name="comments" rows="5" cols="50" required></textarea><br><br>
+             </fieldset>
+             <!-- Группировка поля выбора страны -->
+             <fieldset>
+                <legend>Выбор страны</legend>
+                <!-- Элемент выбора страны -->
+                 <label for="country">Страна:</label>
+                 <select id="country" name="country" required>
+                    <option value="">Выберите страну</option>
+                    <option value="ru">Россия</option>
+                    <option value="kz">Казахстан</option>
+                    <option value="us">США</option>
+                    <option value="ca">Канада</option>
+                 </select><br><br>
+             </fieldset>
+
+            <!-- Группировка кнопок --> 
+            <fieldset>
+                <legend>Действия</legend>
+                <button type="submit">Отправить</button>
+                <button type="reset">Сбросить</button>
+            </fieldset>
+         </form>
+    </body>
+</html>
