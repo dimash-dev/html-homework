@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block and Inline Elements</title>
+    <style>
+        /* Задание 1: Обычные блочные и строчные элементы */
+        .title {
+            background-color: aquamarine;
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        .paragraph {
+            background-color: brown;
+            display: block;
+            margin: 5px;
+            padding: 20px;
+            color: white;
+        }
+
+        .container {
+            background-color: blueviolet;
+            display: block;
+            margin: 5px;
+            padding: 20px;
+            color: white;
+        }
+
+        .image {
+            /* по умолчанию img — строчный элемент */
+            width: 200px;
+            height: auto;
+        }
+
+        /* Задание 2: Преобразование поведения элементов */
+        .image-block {
+            display: block; /* Преобразуем img в блочный элемент */
+            margin: 20px auto;
+        }
+
+        .paragraph-inline {
+            display: inline; /* Преобразуем p в строчный элемент */
+            background-color: lightcoral;
+            padding: 5px;
+        }
+
+        /* Задание 3: Вложенные элементы */
+        .box {
+            padding: 20px;
+            border: 2px solid black;
+            margin-top: 40px;
+            background-color: #f4f4f4;
+        }
+
+        .box-paragraph {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .box-image {
+            display: block;
+            margin-bottom: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+
+
+        .box-link {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Задание 1: Блочные и строчные элементы -->
+    <!-- h1 — блочный элемент -->
+    <h1 class="title">Заголовок</h1>
+
+    <!-- p — блочный элемент -->
+    <p class="paragraph">Это абзац</p>
+
+    <!-- div — блочный элемент -->
+    <div class="container">Это div-контейнер</div>
+
+    <!-- img — строчный элемент -->
+    <img class="image" src="5fd8cca79c599da_upscaled.jpeg" alt="Обычное изображение">
+
+    <!-- Задание 2: Преобразование -->
+    <!-- img стал блочным -->
+    <img class="image-block" src="photo_2025-05-25_17-23-25.jpg" alt="Блочное изображение">
+
+    <!-- p стал строчным -->
+    <p class="paragraph-inline">Это абзац, преобразованный в строчный элемент</p>
+
+    <!-- Задание 3: Вложенные элементы -->
+    <div class="box">
+        <p class="box-paragraph">Вложенный абзац внутри контейнера</p>
+        <img class="box-image" src="5fd8cca79c599da_upscaled.jpeg" alt="Вложенное изображение">
+        <a class="box-link" href="#">Ссылка внутри контейнера</a>
+    </div>
+
+</body>
+</html>
