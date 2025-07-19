@@ -1,40 +1,34 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Единицы и цветовые модели в CSS</title>
-  <link rel="stylesheet" href="units.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="units.css">
 </head>
 <body>
+  <h1>Пример заголовка с пикселями</h1>
+  
+  <h2>Пример заголовка с rem</h2>
 
-  <h1>Единицы и цветовые модели в CSS</h1>
-
-  <!-- Пример блока с размерами в пикселях (px) -->
-  <div class="box-px">Этот блок имеет фиксированные размеры: 200px на 100px</div>
-
-  <!-- Пример блока, где размер шрифта задан через em -->
-  <div class="container-em">
-    <p>Этот текст в 2 раза больше шрифта контейнера, а контейнер — на 20% больше родителя</p>
+  <div class="em">
+    <p>Текст внутри контейнера с ем</p>
   </div>
 
-  <!-- Пример текста с использованием rem (относительно html) -->
-  <p class="text-rem">Этот текст имеет размер 2rem, что эквивалентно 32px</p>
-
-  <!-- Пример использования процентов для ширины -->
-  <div class="parent">
-    <div class="child">Этот блок занимает 50% от ширины родителя</div>
+  <div class="percent">
+    <p>Контейнер 80%</p>
   </div>
 
-  <h2>Цветовые модели</h2>
+  <div class="hex">
+    <p>Цвета через hex</p>
+  </div>
 
-  <!-- Пример использования HEX -->
-  <div class="hex-color">Цвета этого блока заданы с помощью HEX (шестнадцатеричный формат)</div>
+  <div class="rgb">
+    <p>Цвета через rgb</p>
+  </div>
 
-  <!-- Пример использования RGB -->
-  <div class="rgb-color">Цвета этого блока заданы через RGB (красный, зелёный, синий)</div>
-
-  <!-- Пример использования RGBA -->
-  <div class="rgba-color">Цвета этого блока заданы через RGBA, с прозрачностью 50%</div>
-
+  <div class="rgba">
+    <p>Цвета через rgba (с прозрачностью альфа)</p>
+  </div>
 </body>
 </html>
