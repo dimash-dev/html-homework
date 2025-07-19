@@ -1,92 +1,56 @@
-/* Задание 1: hover и focus */
-/* При наведении на кнопку меняем цвет фона */
+/* Задание 1 */
 
+/* При наведении фон зеленый, текст белый */
 button:hover {
-    background-color: rgb(62, 204, 69);
+    background-color: green;
     color: white;
     cursor: pointer;
 }
 
-/* При фокусе на input меняем цвет границы */
+/* При фокусе на input появляется синяя рамка */
 input:focus {
-    border-color: rgb(55, 139, 236);
-    outline: none; /* убираем стандартный синий обвод */
-    box-shadow: 0 0 5px rgb(55, 139, 236);
+    border-color: blue;
+    outline: none;
 }
 
-/* Задание 2: first-child и last-child */
-/* Первый элемент списка с красным цветом */
+/* Задание 2 */
 
+/* Первый элемент списка красный и жирный */
 ul li:first-child {
     color: red;
     font-weight: bold;
 }
 
-/* Последний элемент списка с синим цветом */
+/* Последний элемент списка синий и курсивный */
 ul li:last-child {
     color: blue;
     font-style: italic;
 }
 
-/* Задание 3: Применение к разным элементам */
-/* Ссылка меняет цвет при наведении */
+/* Задание 3 */
 
-div a:hover {
+/* Каждому нечетному абзацу серый фон */
+
+.text p:nth-child(odd) {
+    background-color: #f0f0f0;
+    padding: 4px;
+}
+
+/* При наведении на ссылку цвет и подчеркивание */
+.text a:hover {
     color: orange;
     text-decoration: underline;
 }
 
-/* Нечетные текстовые элементы внутри блока (p) с серым фоном */
-div p:nth-child(odd) {
-    background-color: rgba(255, 255, 255, 0.301);
+/* Задание 4 */
+
+/* Первый абзац внутри блока — меняет фон при наведении */
+.combo p:first-child:hover {
+    background-color: lightblue;
 }
 
-/* Задание 4: Комбинация псевдоклассов */
-/* Первые дочерние элементы внутри блоков меняют цвет при наведении */
-.content-block p:first-child:hover {
-    color: green;
-    font-weight: bold;
-}
-
-/* Элементы, которые в фокусе и являются последними дочерними элементами */
-.content-block button:last-child:focus {
-    outline: 2px solid purple;
-    background-color: rgb(214, 201, 250);
-}
-
-/* Немного стилей для формы и блоков */
-form {
-    margin-bottom: 30px;
-}
-
-input, button {
-    padding: 8px 12px;
-    font-size: 16px;
-    margin-right: 10px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-
-ul {
-    list-style: disc inside;
-    margin-bottom: 30px;
-    padding-left: 0;
-}
-
-ul li {
-  margin-bottom: 5px;
-}
-
-div {
-  margin-bottom: 30px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.content-block {
-  border: 1px solid #999;
-  padding: 10px;
-  margin-bottom: 30px;
+/* Последний элемент при фокусе рамка и фон */
+.combo input:last-child:focus {
+    border: 2px solid red;
+    background-color: #fff0f0;
 }
