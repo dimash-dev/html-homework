@@ -1,68 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="pse.css">
 </head>
+
 <body>
-    <h1>Псевдоклассы в CSS</h1>
-    <!--Задание 1-->
-    <section>
-        <h2>Форма hover и focus</h2>
-        <form>
-    <!-- Поле ввода будет менять рамку при фокусе -->
-            <label>
-                Введите текст:
-                <input type="text">
-            </label>
-    <!-- Кнопка меняет фон при наведении -->
-            <button>Нажми</button>
-        </form>
-        <p>Когда мышкой наводишь кнопка меняется, если кликнуть появится рамка</p>
-    </section>
+    <h1>Задание1</h1>
+    <button class="button">Click me</button>
+    <input class="input" type="text">
 
-    <!--Задание 2-->
-    <section>
-        <h2>Список первый и последний элемент</h2>
-        <ul>
-            <li>элемент 1</li>
-            <li>элемент 2</li>
-            <li>элемент 3</li>
-        </ul>
-        <p>Первый элемент стал красным, последний синим.</p>
-    </section>
+    <h2>Задание 2</h2>
+    <ul>
+        <li class="list-fruit">Banana</li>
+        <li class="list-fruit">Apple</li>
+        <li class="list-fruit">Mandarine</li>
+    </ul>
 
-    <!--Задание 3-->
-    <section>
-        <h2>ссылки и абзацы</h2>
-        <div class="text">
-    <!-- Нечетные абзацы будут иметь серый фон -->
-            <p>Параграф 1</p>
-            <p>Параграф 2</p>
-            <p>Параграф 3</p>
+    <h2>Задание 3</h2>
+    <div class="block1">
+        <p class="text1">Первый текстовый элемент</p>
+        <p class="text1">Второй текст</p>
+        <p class="text1">Третий текст</p>
+        <p class="text1">Четвертый текст</p>
+        <a href="#">Обычная ссылка</a>
+    </div>
+    <div class="block2">
+        <p class="text2">Первый блок</p>
+        <p class="text2">Средний текст</p>
+        <p class="text2">Еще один текст</p>
+        <p class="text2">Последний текст</p>
+        <a href="#">Вторая ссылка</a>
+    </div>
 
-    <!-- Ссылк: меняет цвет при наведении -->
-            <a href="#">Наведи на ссылку</a>
-        </div>
-        <p>Серый фон у нечетных абзацев, ссылка меняется при наведении</p>
-    </section>
+    <h2>Задание 4</h2>
+    <div class="block4">
+        <p>Первый элемент</p>
+        <p>Средний абзац</p>
+        <input type="text">
+    </div>
+    <div class="block4">
+        <h3>Заголовок</h3>
+        <p>Просто текст</p>
+        <input type="text">
+    </div>
 
-    <!--Задание 4-->
-    <section>
-        <h2>Комбинированные псевдоклассы</h2>
-        <div class="combo">
-    <!-- Первый элемент реагирует на hover -->
-            <p>Наведи сюда</p>
-            <p>Обычный текст</p>
-    <!-- Последний элемент input, будет реагировать на focus -->
-            <label>
-                Ввод:
-                <input type="text">
-            </label>
-        </div>
-        <p>Первый элемент реагирует на hover, последний на focus</p>
-    </section>
 </body>
+
 </html>

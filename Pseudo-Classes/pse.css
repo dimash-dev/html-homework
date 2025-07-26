@@ -1,56 +1,62 @@
 /* Задание 1 */
-
-/* При наведении фон зеленый, текст белый */
-button:hover {
-    background-color: green;
-    color: white;
-    cursor: pointer;
+/* Когда наводишь курсор на кнопку, меняется цвет на красный */
+.button:hover {
+  background-color: red;
 }
 
-/* При фокусе на input появляется синяя рамка */
-input:focus {
-    border-color: blue;
-    outline: none;
+/* При клике на элемент, меняется цвет границы на cиний цвет */
+.input:focus {
+  border-color: blue;
+  outline: none;
+  /* outline: none; Без этого кода, у меня не работало, но на видео курса этот код не показывали. */
 }
 
 /* Задание 2 */
 
-/* Первый элемент списка красный и жирный */
-ul li:first-child {
-    color: red;
-    font-weight: bold;
+/* Применил :first-child что-бы менять цвет первого элемента на синий. */
+.list-fruit:first-child {
+  background-color: gray;
 }
 
-/* Последний элемент списка синий и курсивный */
-ul li:last-child {
-    color: blue;
-    font-style: italic;
+/* Применил :last-child что-бы менять цвет последнего элемента на фиолетовый. */
+.list-fruit:last-child {
+  background-color: blueviolet;
 }
 
 /* Задание 3 */
 
-/* Каждому нечетному абзацу серый фон */
-
-.text p:nth-child(odd) {
-    background-color: #f0f0f0;
-    padding: 4px;
+/* Ссылка при наведении должен менять цвет на зеленый, а текст на белый */
+.block1 a:hover {
+  background-color: green;
+  color: white;
 }
 
-/* При наведении на ссылку цвет и подчеркивание */
-.text a:hover {
-    color: orange;
-    text-decoration: underline;
+/* При клике на ссылку, цвет меняется на синий, а текст на красный. */
+.block2 a:focus {
+  background-color: blue;
+  color: red;
+}
+
+/* Тут абзацы, нечетные должны менять цвет на голубой. */
+.text1:nth-child(odd) {
+  background-color: aquamarine;
+}
+
+/* Четные должны менять цвет на оранжевый.*/
+.text2:nth-child(even) {
+  background-color: orange;
 }
 
 /* Задание 4 */
 
-/* Первый абзац внутри блока — меняет фон при наведении */
-.combo p:first-child:hover {
-    background-color: lightblue;
+/* Первый дочерний элемент внутри блока, при наведении меняется цвет фона на желтый */
+.block4 :first-child:hover {
+  background-color: yellow;
+  font-weight: bolder;
 }
 
-/* Последний элемент при фокусе рамка и фон */
-.combo input:last-child:focus {
-    border: 2px solid red;
-    background-color: #fff0f0;
+/* Последний элемент внутри блока, если в фокусе, меняет цвет заднего фона на красный */
+.block4 :last-child:focus {
+  background-color: red;
+  outline: none;
 }
