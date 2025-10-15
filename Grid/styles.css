@@ -28,10 +28,11 @@ body {
 .card {
   border: 1px solid gray;
   border-radius: 10px;
+
 }
 
 .card-img {
-  width: 380px;
+  width: 377px;
   height: 245px;
 }
 
@@ -72,4 +73,5 @@ body {
   padding: 20px 40px;
   border: none;
   cursor: pointer;
+  border-radius: 8px;
 }
