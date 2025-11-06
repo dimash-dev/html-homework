@@ -1,0 +1,25 @@
+/* Подключение локального шрифта Montserrat-Bold */
+@font-face {
+  font-family: "MyFont";
+  src: url(./static/Montserrat-Bold.ttf);
+}
+
+
+/* Google Font + запасные шрифты */
+.poppins-regular {
+  font-family: "Poppins", "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Google Font в жирном стиле + запасные serif-шрифты */
+.poppins-black {
+  font-family: "Poppins", "Montserrat", "Georgia", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Использование локального шрифта */
+.local-font {
+  font-family: "MyFont", "Lato", "Verdana", sans-serif;
+}
