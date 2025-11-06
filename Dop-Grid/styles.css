@@ -1,0 +1,95 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 85px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 50px;
+  width: 730px;
+  margin-bottom: 150px;
+}
+
+.fix-img {
+  width: 310px;
+  height: 422px;
+  margin-bottom: 20px;
+}
+
+
+.card {
+  padding: 20px 20px 30px 20px;
+  background-color: #E1EDE6;
+}
+
+.author {
+  color: #86928B;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 100%;
+  margin-bottom: 10px;
+}
+
+.description2 {
+  color: #2C2D35;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 100%;
+  margin-bottom: 8px;
+}
+
+.materials {
+  color: #2C2D35;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 100%;
+  margin-bottom: 30px;
+}
+
+.price {
+  color: #598D66;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 100%;
+  margin-bottom: 20px;
+}
+
+.padbtn {
+  padding: 21px 107px;
+}
+
+.reclam {
+  margin-bottom: 70px;
+}
+
+.btn {
+  padding: 21px 106px;
+  border: 1px solid #598D66;
+  color: #598D66;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.cards2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  margin-right: 165px;
+  margin-left: 165px;
+  margin-bottom: 70px;
+  gap: 30px;
+  width: 1110px;
+}
+
+.card2 {
+  padding: 20px 20px 30px 20px;
+  background-color: #E1EDE6;
+}
