@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  margin: 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-direction: column;
+}
+
+/* ЗАДАНИЕ 1 */
+/* квадрат, повернутый на 100° */
+.rotate {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  transform: rotate(100deg)
+}
+
+/* синий круг, увеличенный в 1.5 раза. */
+.scale {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 50%;
+  transform: scale(1.5);
+}
+
+/* красный квадрат, смещённый вправо и вниз. */
+.translate {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transform: translate(50px, 20px);
+}
+
+/* наклоняем элемент по осям X и Y */
+.skew {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  transform: skew(-40deg, -20deg);
+}
+
+
+/* ЗАДАНИЕ 2 */
+/* При наведении мыши цвет и форма плавно меняются. */
+.transition {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  transition: transform 0.7s ease, background-color 0.7s ease;
+}
+
+/* Эффект при наведении элемент увеличивается, немного вращается и меняет цвет */
+.transition:hover {
+  transform: scale(1.5) rotate(15deg);
+  background-color: aqua;
+}
+
+/* ЗАДАНИЕ 3 */
+/* Меняется позиция, масштаб и цвет с течением времени */
+.animation {
+  width: 100px;
+  height: 100px;
+  background-color: chartreuse;
+  animation: moveGrow 4s ease-in-out;
+}
+
+/* Ключевые кадры для анимации moveGrow.
+  0%  начальное состояние на месте, обычный размер, красный цвет
+  50% перемещается вправо, увеличивается, становится оранжевым
+  100% возвращается в исходное состояние */
+
+@keyframes moveGrow {
+  0% {
+    transform: translateX(0) scale(1);
+    background-color: red;
+  }
+
+  50% {
+    transform: translateX(200px) scale(1.5);
+    background-color: orange;
+  }
+
+  100% {
+    transform: translateX(0) scale(1);
+    background-color: red;
+  }
+}
