@@ -1,0 +1,88 @@
+/* Задание 1 */
+.text1 {
+  padding: 10px;
+  border: 1px solid black;
+  position: relative;
+}
+
+/* текст перед абзацем, синий цвет, размер шрифта 1.5em */
+.text1::before {
+  content: "Добавил перед текстом ";
+  margin-bottom: 10px;
+  display: block;
+  color: blue;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.text2 {
+  padding: 10px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+/* текст после абзаца, красный цвет, размер шрифта 1.5em */
+.text2::after {
+  font-size: 1.5em;
+  font-weight: bold;
+  content: "Добавил после текста ";
+  display: block;
+  color: red;
+  margin-top: 10px;
+}
+
+/* Задание 2 */
+/* стрелка перед заголовком h1 */
+.tag1::before {
+  content: "-> ";
+}
+
+/* стрелка после заголовка h2 */
+.tag2::after {
+
+  content: " <-";
+}
+
+/* Задание 3 */
+.box1 {
+  position: relative;
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Линия сверху блока - градиент от красного к синему */
+.box1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background: linear-gradient(to right, red, blue);
+
+}
+
+.box2 {
+  position: relative;
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Линия снизу блока - градиент от синего к красному */
+.box2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background: linear-gradient(to right, blue, red);
+}
